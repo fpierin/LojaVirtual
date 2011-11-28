@@ -20,7 +20,7 @@ public class Produto {
     return nome;
   }
 
-  public void setNome(String nome) {
+  public void setNome(final String nome) {
     this.nome = nome;
   }
 
@@ -28,7 +28,7 @@ public class Produto {
     return descricao;
   }
 
-  public void setDescricao(String descricao) {
+  public void setDescricao(final String descricao) {
     this.descricao = descricao;
   }
 
@@ -36,7 +36,7 @@ public class Produto {
     return preco;
   }
 
-  public void setPreco(Double preco) {
+  public void setPreco(final Double preco) {
     this.preco = preco;
   }
 
@@ -44,7 +44,7 @@ public class Produto {
     return id;
   }
 
-  public void setId(Long id) {
+  public void setId(final Long id) {
     this.id = id;
   }
 
