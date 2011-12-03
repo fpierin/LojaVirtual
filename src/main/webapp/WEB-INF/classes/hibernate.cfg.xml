@@ -18,6 +18,7 @@
 		
   		<!-- Mapeamento -->  
         <mapping class="br.usp.each.lojavirtual.representacoes.Produto"/>
+        <mapping class="br.usp.each.lojavirtual.representacoes.Usuario"/>        
          
 	</session-factory>
 </hibernate-configuration>

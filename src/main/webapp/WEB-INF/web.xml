@@ -27,17 +27,9 @@
 			<description>lojavirtual</description>
 			<display-name>Loja Virtual</display-name>
 			<url-pattern>*.jsp</url-pattern>
-			<include-prelude>/header.jspf</include-prelude>
-			<include-coda>/footer.jspf</include-coda>
+			<include-prelude>/WEB-INF/jspf/header.jspf</include-prelude>
+			<include-coda>/WEB-INF/jspf/footer.jspf</include-coda>
 		</jsp-property-group>
 	</jsp-config>
-	<!-- <context-param> -->
-	<!-- <param-name>br.com.caelum.vraptor.packages</param-name> -->
-	<!-- <param-value>br.com.caelum.vraptor.restfulie</param-value> -->
-	<!-- </context-param> -->
-<!-- 	<context-param> -->
-<!-- 		<param-name>br.com.caelum.vraptor.encoding</param-name> -->
-<!-- 		<param-value>UTF-8</param-value> -->
-<!-- 	</context-param> -->
 </web-app>
 
