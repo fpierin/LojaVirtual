@@ -83,7 +83,7 @@
 					<input id="busca" name="nome" />
 				</form>
 				<script type="text/javascript">
-					$("#busca").puts("Busca produtos por nome");
+					$("#busca").puts("Busca rápida");
 				</script>
 			</div>
 			<div id="usuario">
@@ -99,6 +99,7 @@ Olá, <strong>${usuarioWeb.nome }</strong>! <a
 						<div>
 							<span>Deseja realizar <a href="<c:url value="/login"/>">login</a>
 								ou <a href="<c:url value="/usuarios/novo"/>">cadastrar-se</a> ?
+
 
 							
 						</div>
@@ -122,15 +123,16 @@ Olá, <strong>${usuarioWeb.nome }</strong>! <a
 					</c:if>
 				</div>
 			</div>
-			<div id="menu">
-				<ul>
-					<c:if test="${usuarioWeb.logado}">
-						<li><a href="<c:url value="/produtos/novo"/>">Novo
-								Produto</a></li>
-					</c:if>
-					<li><a href="<c:url value="/produtos"/>">Lista Produtos</a></li>
-				</ul>
-			</div>
+		</div>
+		<div id="menu">
+			<ul>
+				<c:if test="${usuarioWeb.logado}">
+					<li><a href="<c:url value="/produtos/novo"/>">Adicionar produto</a></li>
+				</c:if>
+				<li><a href="<c:url value="/loja/localizacao"/>">Localização</a></li>
+				<li><a href="<c:url value="/produtos"/>">Vitrine</a></li>				
+				<li><a href="<c:url value="/loja/sobre"/>">Quem somos</a></li>	
+			</ul>
 		</div>
 		<div id="erros">
 			<ul>

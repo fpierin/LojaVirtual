@@ -1,5 +1,4 @@
 * {
-	font-family: Book Antiqua;
 	font-size: small;
 	color: #5c5c5c;
 	margin: 0px;
@@ -8,15 +7,17 @@
 
 body {
 	background-color: #FDFDFD;
+	font-family: Book Antiqua;
 }
 
 #body {
 	border-top: 1px dashed #eeeeee;
 	width: 100%;
 	margin: 0 auto;
-	min-height: 300px;
+	min-height: 250px;
 	padding: 10px 0;
 	float: left;
+	letter-spacing: 1.8px;		
 }
 
 #corpo {
@@ -29,7 +30,7 @@ body {
 }
 
 #header {
-	height: 100px;
+	height: 80px;
 	margin: 0px;
 	padding: 0px;
 	border-bottom: 1px dashed #bbbbbb;
@@ -39,13 +40,14 @@ body {
 	display: block;
 	float: left;
 	font-family: French Script MT;
-	font-size: 45px;
+	font-size: 55px;
 	font-weight: bold;
 	color: #692E1F;
 	margin: 10px;
+	text-shadow: #ffffcc 20px -12px 2px;
 }
 
-#pesquisa { /* 	display: inline; */
+#pesquisa {
 	position: absolute;
 	width: 180px;
 	height: 30px;
@@ -63,13 +65,17 @@ body {
 	margin: 0px;
 	padding: 0px;
 	text-align: right;
+	padding: 0px;
+	margin: 0px;
+	heigth: 10px;
+	float: right;
 }
 
 #carrinho {
 	display: block;
 	padding-top: 10px;
 	-moz-border-radius: 10px;
-	text-align: right;	
+	text-align: right;
 }
 
 #carrinho h3 a {
@@ -99,12 +105,13 @@ body {
 }
 
 #footer {
-	text-align: center;	
+	text-align: center;
 	border-top: 1px solid gray;
 	clear: both;
 }
 
 #preco {
+	padding: 3px;
 	color: red;
 }
 
@@ -113,28 +120,38 @@ body {
 	padding-left: 10px;
 }
 
-#menu { 
+#menu {
 	float: right;
-	width: 200px;
-	display: block;
+	width: 1000px;
+/* 	display: block; */
 }
 
 #menu>ul {
 	list-style: none;
-	padding-left: 5px;
-	background-color: #2a2948;
-	-moz-border-radius: 0 5px 5px 0;
+/* 	display: inline; */
+	width: 1000px;
+	float: right;
+	/* 	padding-left: 2px 5px; */
+	/* 	-moz-border-radius: 0 5px 5px 0; */
 }
 
-#menu>ul>li {
+#menu>ul>li { 
+	/* 	border-top: 1px solid white; */
 	display: inline;
-	border-top: 2px solid white;
-	height: 23px;
-	padding: 5px 0;
+	height: 20px;
+	color: #692E1F;
+	font-style: bold;
+	/* 	padding: 3px 10px 0px 10px; */
+	float: right;
+	text-align: center;
 }
 
 #menu>ul>li:hover {
-	background-color: #5d5c7B;
+	background-color: #ffffcc;
+}
+
+#menu>ul>a:hover {
+	color: white;
 }
 
 #menu>ul>li:last-child {
@@ -147,7 +164,11 @@ body {
 }
 
 #menu li a {
-	color: white;
+/* 	display: block; */
+	padding: 2px;
+	margin: 0 5 0 5 px;
+	color: #692E1F;
+	font-weight: bold;
 	text-decoration: none;
 }
 
@@ -162,14 +183,17 @@ body {
 }
 
 input:FOCUS,textarea:FOCUS {
-	background-color: #e7ecf1;
-	border: 1px solid gray;
+	background-color: #ffffcc;
+	border: 1px solid #692e1f;
 	-moz-border-radius: 2px;
 	padding: 1px;
 }
 
-input,label,textarea {
+input,textarea {
 	display: block;
+	border: 1px solid #bbbbbb;
+	padding: 1px;
+	-moz-border-radius: 2px;
 }
 
 input.qtde {
@@ -190,28 +214,33 @@ fieldset {
 	border: none;
 	padding: 10px;
 	width: 1000px;
-	border-top: 3px solid #692E1F;
+	border-top: 3px solid #ffffcc;
 }
 
 fieldset legend {
-	border: 1px solid #692E1F;
+	border: 0px solid #692E1F;
 	-moz-border-radius: 3px;
-	background-color: #692E1F;
+	/* 	background-color: #ffffcc; */
 	font-weight: bold;
 	padding: 3px;
 	margin-bottom: 15px;
 	font-size: 16pt;
-	color: #FFFFFF;
+	color: #692E1F;
+}
+
+table {
+	width: 100%;
+	text-align: left;
 }
 
 table thead {
-	background-color: #2a2948;
-	color: white;
+	background-color: #ffffff;
+	color: #692E1F;
 	font-weight: bold;
 }
 
 table tbody tr:nth-child(even) {
-	background-color: #a29bc0;
+	background-color: #ffffcc;
 }
 
 table tbody td {
@@ -219,8 +248,8 @@ table tbody td {
 }
 
 table tfoot th {
-	background-color: #2a2948;
-	color: white;
+	background-color: #ffffff;
+	color: #692E1F;
 	font-weight: bold;
 }
 
