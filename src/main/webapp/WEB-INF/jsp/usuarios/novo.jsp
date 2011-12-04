@@ -1,7 +1,7 @@
 <form id="usuariosForm" action="<c:url value="/usuarios"/>"
 	method="POST">
 	<fieldset>
-		<legend>Criar novo usuário</legend>
+		<legend>Criar novo usu�rio</legend>
 		<label for="nome">Nome:</label> <input id="nome" class="required"
 			type="text" name="usuario.nome" value="${usuario.nome }" /> <label
 			for="login">Login:</label> <input id="login" class="required"
@@ -15,5 +15,5 @@
 
 
 <script type="text/javascript">
-	$(’#usuariosForm’).validate();
+	$('#usuariosForm').validate();
 </script>

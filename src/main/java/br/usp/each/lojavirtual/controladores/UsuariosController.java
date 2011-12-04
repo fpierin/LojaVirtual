@@ -66,7 +66,7 @@ public class UsuariosController {
 	result.redirectTo(ProdutosController.class).lista();
     }
 
-    private void novo() {
+    public void novo() {
     }
 
 }
