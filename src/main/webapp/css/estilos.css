@@ -10,11 +10,21 @@ body {
 	font-family: Book Antiqua;
 }
 
+#bemvindo {
+	display: block;
+	position: absolute;
+	width: 500px;
+	left: 50%;
+	text-align: center;
+	margin-left: -250px;
+	margin-top: 100px;	
+}
+
 #body {
 	border-top: 1px dashed #eeeeee;
 	width: 100%;
 	margin: 0 auto;
-	min-height: 250px;
+	min-height: 500px;
 	padding: 10px 0;
 	float: left;
 	letter-spacing: 1.8px;		
@@ -55,6 +65,23 @@ body {
 	margin-left: -90px;
 	margin-top: 20px;
 	text-align: center;
+}
+
+#mapa {
+	border-color: #5c5c5c;
+	border-style: dotted;
+	border-width: 2px;
+	width: 400px;
+	height: 400px;
+	text-align: center;
+	padding: 0 50 0 50 px;
+	left: 50%;
+	margin-left: -250px;
+}
+
+#localizacao {
+	text-align: center;	
+	padding: 5px;
 }
 
 #usuario {
@@ -105,8 +132,9 @@ body {
 }
 
 #footer {
+	display: block;
 	text-align: center;
-	border-top: 1px solid gray;
+	border-top: 1px dashed #bbbbbb;
 	clear: both;
 }
 

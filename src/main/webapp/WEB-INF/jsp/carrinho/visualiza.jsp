@@ -1,4 +1,5 @@
 <h3>Itens do seu carrinho de compras</h3>
+<br>
 <table>
 	<thead>
 		<tr>
@@ -10,7 +11,7 @@
 		</tr>
 	</thead>
 	<tbody>
-		<c:forEach items="${carrinho.itens}" var="item">
+		<c:forEach items="${carrinho.itens}" var="item" varStatus="s">
 			<tr>
 				<td>${item.produto.nome }</td>
 				<td>${item.produto.descricao }</td>
@@ -18,9 +19,9 @@
 						value="${item.produto.preco }" /></td>
 				<td>${item.quantidade }</td>
 				<td><fmt:formatNumber type="currency"
-						value="${item.quantidade * item.produto.preco }" /></td>
+						value="${item.quantidade * item.produto.preco}" /></td>
 				<td>
-					<form action="<c:url value="/carrinho/${s.index }"/>" method="POST">
+					<form action="<c:url value="/carrinho/${s.index}"/>" method="POST">
 						<button class="link" name="_method" value="DELETE">Remover</button>
 					</form>
 				</td>
