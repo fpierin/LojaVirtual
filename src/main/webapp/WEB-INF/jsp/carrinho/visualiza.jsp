@@ -33,7 +33,12 @@
 		<tr>
 			<td colspan="2"></td>
 			<th colspan="2">Total:</th>
-			<th><fmt:formatNumber type="currency" value="${carrinho.total }" /></th>
+			<th><fmt:formatNumber type="currency" value="${carrinho.total}" /></th>
 		</tr>
 	</tfoot>
 </table>
+
+<c:if test="${usuarioWeb.logado}">
+	<a href="<c:url value="/carrinho/comprar"/>">Fechar pedido</a>
+</c:if>
+<a href="<c:url value="/carrinho/esvaziar"/>">Esvaziar carrinho</a>

@@ -3,7 +3,7 @@
 <html>
 <head>
 <title>Blair Vestidos</title>
-<meta http-equiv="Content-Type" content="text/html" charset=ISO-8859-1">
+<meta http-equiv="Content-Type" content="text/html" charset="ISO-8859-1">
 <link rel="stylesheet" href="<c:url value="/css/estilos.css"/>"
 	type="text/css" media="all">
 <link href="<c:url value="/javascripts/jquery.autocomplete.css"/>"
@@ -145,7 +145,7 @@ Olá, <strong>${usuarioWeb.nome }</strong>! <a
 		</div>
 		<div id="menu">
 			<ul>
-				<c:if test="${usuarioWeb.logado}">
+				<c:if test="${usuarioWeb.logado && usuarioWeb.admin}">
 					<li><a href="<c:url value="/produtos/novo"/>">Adicionar
 							produto</a></li>
 				</c:if>

@@ -9,6 +9,8 @@
 		<textarea id="descricao" name="produto.descricao">${produto.descricao}</textarea>
 		<label for="preco">Preço:</label> <input id="preco" type="text"
 			name="produto.preco" value="${produto.preco }" />
+		<label for="quantidade">Qtde. estoque:</label> <input id="quantidade" type="number"
+			name="produto.quantidade" value="${produto.quantidade}" />			
 		<button type="submit" name="_method" value="PUT">Enviar</button>
 	</fieldset>
 </form>

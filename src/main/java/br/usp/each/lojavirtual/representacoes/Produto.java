@@ -25,6 +25,21 @@ public class Produto {
     @Length(min = 0)
     private Double preco;
 
+    @Length(min = 0)
+    private int quantidade;
+
+    public Produto() {
+    }
+
+    public Produto(final Long id, final String nome, final String descricao,
+	    final Double preco, final int quantidade) {
+	this.id = id;
+	this.nome = nome;
+	this.descricao = descricao;
+	this.preco = preco;
+	this.quantidade = quantidade;
+    }
+
     public String getDescricao() {
 	return descricao;
     }
@@ -41,6 +56,10 @@ public class Produto {
 	return preco;
     }
 
+    public int getQuantidade() {
+	return quantidade;
+    }
+
     public void setDescricao(final String descricao) {
 	this.descricao = descricao;
     }
@@ -55,6 +74,10 @@ public class Produto {
 
     public void setPreco(final Double preco) {
 	this.preco = preco;
+    }
+
+    public void setQuantidade(final int quantidade) {
+	this.quantidade = quantidade;
     }
 
 }

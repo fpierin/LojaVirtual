@@ -1,7 +1,8 @@
-Autor: Felipe Lombardi Pierin
+Autor: Felipe Lombardi Pierin nº USP 5875242
+Autor: Pauo Henrique Silva nº USP 6875101
 Grupo: 50
 
-Implementação de um exemplo de acesso a um banco de dados PostGree a partir de um DAO genérico
+Implementação de sistema de controle para centro comercial
 
 Linguagens de programação: 
 - Java JSE 1.6
@@ -10,10 +11,13 @@ IDE de programação
 - Eclipse
 
 Banco de dados
-- Modelo Relacional
-- PostGreSQL 9
+- MySQL 5.1
 
-Conceitos:
-- Pattern DAO
-- Generic DAO
+Frameworks
+- VRaptor
+- Spring
+- Maven
+- JQuery
+- JSP
+- CSS
 

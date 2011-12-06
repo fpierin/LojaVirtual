@@ -13,6 +13,10 @@ public class UsuarioWeb {
 	return logado.getNome();
     }
 
+    public boolean isAdmin() {
+	return isLogado() && logado.isAdmin();
+    }
+
     public boolean isLogado() {
 	return logado != null;
     }
